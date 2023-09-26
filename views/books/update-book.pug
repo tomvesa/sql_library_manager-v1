@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  h2=title
+  
+  include errors
+
+  form(action="/books/" + book.id, method="post")
+    include form
+    input(type="submit" value="Update")
+
+  form(action="/books/" + book.id + "/delete", method="post")
+     input(type="submit", value="Delete") 
+ 

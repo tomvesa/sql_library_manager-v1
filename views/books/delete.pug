@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  h2= title
+  ul
+    Are you sure you want to delete?
+    li 
+      strong= book.title 
+    li  by:  
+      strong= book.author   
+    li id:
+      strong= book.id
+
+  form(action="/books/" + book.id + "/delete", method="post")
+    a(href="/books/" + book.id) No
+    input(type="submit", value= "Yes, delete")

@@ -1,0 +1,6 @@
+if(errors)
+  h2.errors Damn there is an error somewhere!
+  ul.errors  
+    each error in errors
+      li
+        = error.message
