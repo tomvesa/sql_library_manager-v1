@@ -3,7 +3,12 @@ extends ../layout
 block content
   div.subheader
     h2 Books
-    a(href="/books/new", class="btn-new") Add New Book &#43;
+    div(class="actions")
+      a(href="/books/new", class="btn-new") Add New Book &#43;
+      div(class="search-box") 
+        form
+          include search
+            input(type="submit" value="search" class="search-btn")
 
   table  
     thead

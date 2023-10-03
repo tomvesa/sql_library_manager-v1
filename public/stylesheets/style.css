@@ -1,6 +1,8 @@
 body {
   padding: 10px 50px 50px;
   font: 18px "Garamond", serif;
+  width: 100%;
+  max-width: 1200px;
 }
 
 a {
@@ -59,6 +61,10 @@ th {
   padding: 5px 20px 5px 10px;
 }
 
+table {
+  width: 100%;
+}
+
 tr {
   min-height: 50px;
 }
@@ -94,4 +100,15 @@ input[type=text], input[type=number] {
 
 .error {
   color: rgb(236, 15, 15);
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions .search-btn {
+  margin-left: 0px;
 }
