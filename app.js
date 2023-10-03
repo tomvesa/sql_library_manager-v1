@@ -8,7 +8,7 @@ var sequelize = require('./models/').sequelize;
 
 var indexRouter = require('./routes/index');
 const booksRouter = require('./routes/books')
-const usersRouter = require('./routes/users');
+
 
 //console.log(indexRouter)
 var app = express();
@@ -26,12 +26,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/books', booksRouter);
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-
-app.use(function(req, res, next) {
- console.log("environment :", req.app.get('env'))
-
-});
 
 (async() => {
   try{
