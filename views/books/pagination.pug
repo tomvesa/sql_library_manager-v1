@@ -1,0 +1,5 @@
+div.paggination-box
+  a(href=`/books/?search=${searchQuery}&page=${+currentPage - 1}` class=`paggination-icon previous ${currentPage > 1 ? "active" : ""}`, id="previous-page") <= Previous
+  span(class="page")= `page ${currentPage} / ${pages}`
+  a(href=`/books/?search=${searchQuery}&page=${+currentPage + 1}`, class=`paggination-icon next ${currentPage < pages ? "active" : ""}` id="next-page") Next =>
+  spantotalBooks= `Found ${booksCount} items`

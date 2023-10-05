@@ -112,3 +112,30 @@ input[type=text], input[type=number] {
 .actions .search-btn {
   margin-left: 0px;
 }
+
+.footer {
+  margin-top: 1.5em;
+}
+
+.paggination-box{
+  margin-left: 1.5em;
+}
+
+.paggination-icon {
+  margin: 0 1.5em;
+  font-weight: 800;
+  font-size: .9em;
+  border: 1px solid #66b7a4a1;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: lightgrey;
+  color: #01987557 ;
+  pointer-events: none;
+}
+
+.paggination-icon.active{
+  background: inherit;
+  color: inherit;
+  pointer-events: initial;
+}
+
