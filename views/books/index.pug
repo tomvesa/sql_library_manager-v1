@@ -3,10 +3,10 @@ extends ../layout
 block content
   div.subheader
     h2 Books
-    div(class="actions")
+    div.actions
       a(href="/books/new", class="btn-new") Add New Book &#43;
-      div(class="search-box") 
-        form
+      div.search-box 
+        form(action="/books", method="get")
           include search
             input(type="submit" value="search" class="search-btn")
 
@@ -25,3 +25,7 @@ block content
           td= book.author
           td= book.genre
           td= book.year
+
+  div.footer
+    include pagination
+    
