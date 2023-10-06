@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
         msg: "Author cannot be empty"
      },
      notEmpty: {
-       msg: "Title cannot be empty"
+       msg: "Author cannot be empty"
      }
     }},
     genre: DataTypes.STRING,
