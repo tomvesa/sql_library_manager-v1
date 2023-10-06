@@ -52,6 +52,11 @@ router.get('/', asyncHandler(async (req, res) => {
             genre: {
               [Op.like]: `%${searchQuery}%`
             }
+          },
+          {
+            year: {
+              [Op.like]: `%${searchQuery}%`
+            }
           }
         ]
       }
