@@ -7,7 +7,7 @@ var sequelize = require('./models/').sequelize;
 
 
 var indexRouter = require('./routes/index');
-const booksRouter = require('./routes/books')
+//const booksRouter = require('./routes/books')
 
 
 //console.log(indexRouter)
@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/books', booksRouter);
+//app.use('/books', booksRouter);
 app.use('/', indexRouter);
 
 (async() => {
